@@ -1,19 +1,19 @@
 import React from 'react'
 
-export default function Main(props) {
+export default function Main({currentNote,updateNote}) {
 
 //    const [text,setText] = React.useState("")
 
    function handleChange(event){
       const txt = event.target.value      
-      props.updateNote(txt)
+       updateNote(txt)
    }
   
-    console.log(props.currentNote)
+    console.log(currentNote)
     return (
         <div className='main-area'>
-            <h2>thoafa</h2>
-            <textarea name="text" cols="100" rows="10" onChange={handleChange} value={props.currentNote.body }></textarea>
+            <h2>Notes</h2>
+            <textarea name="text" cols="100" rows="10" onChange={handleChange} value={currentNote.body}></textarea>
                 
         </div>
     )

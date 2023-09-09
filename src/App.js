@@ -41,6 +41,7 @@ function App() {
     
  }
 
+ let FCN = findCurrentNote()
 
   return (
     <div className="App">
@@ -48,12 +49,12 @@ function App() {
       <Sidebar 
       createNote={createNote}
       notes={notes}
-      currentNote={findCurrentNote()}
+      currentNote={FCN}
       setCurrentNoteId={setCurrentNoteId}
       />
-     {currentNoteId && notes.length>0 &&
+     {notes.length>0 &&
       <Main
-      currentNote={findCurrentNote()}
+      currentNote={FCN}
       updateNote={updateNote}
       />
      }
