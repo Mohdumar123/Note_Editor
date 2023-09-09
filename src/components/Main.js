@@ -2,14 +2,10 @@ import React from 'react'
 
 export default function Main(props) {
 
-   const [text,setText] = React.useState("")
+//    const [text,setText] = React.useState("")
 
    function handleChange(event){
-      const txt = event.target.value
-      setText(oldText=>{
-        oldText+=txt
-      })
-      
+      const txt = event.target.value      
       props.updateNote(txt)
    }
   
