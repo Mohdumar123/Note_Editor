@@ -9,7 +9,7 @@ export default function Main({currentNote,updateNote}) {
        updateNote(txt)
    }
   
-    console.log(currentNote)
+    // console.log(currentNote)
     return (
         <div className='main-area'>
             <h2>Notes</h2>
