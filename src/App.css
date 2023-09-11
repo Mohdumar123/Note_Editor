@@ -32,18 +32,18 @@ margin: 5px 10px;
 .title{
   border-radius: 25px ;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   cursor: pointer;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px inset;
 }
 .text-snippet{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size:medium;
+  font-size:large;
 }
 
 .selected-ele{
@@ -58,6 +58,7 @@ margin: 5px 10px;
 
 .title:hover > .trash-btn{
   display: block;
+  margin-left: 2%;
 }
 
 .main-area{
@@ -82,8 +83,29 @@ margin: 5px 10px;
   .sidebar-content{
     font-size: x-large;
     border-radius: 100px;
+    padding: 0% 30%;
   }
   .sidebar-head{
     display: block;
   }
+  .trash-btn{
+    display: block;
+    font-size: small;
+  }
+  .title{
+    width: 100%;
+  }
+}
+
+.firstPage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.noteName{
+  background-color: rgb(0, 48, 48);
+  color: rgb(0, 216, 216);
 }

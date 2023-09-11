@@ -79,20 +79,30 @@ function App() {
 
   return (
     <div className="App">
-      
-      <Sidebar 
+
+      {notes[0] ?
+      <>
+     <Sidebar 
       createNote={createNote}
       notes={notes}
       currentNote={FCN}
       setCurrentNoteId={setCurrentNoteId}
       deleteNote={deleteNote}
       />
-     {notes.length>0 &&
+      
       <Main
       currentNote={FCN}
       updateNote={updateNote}
       />
-     }
+     </>
+     :
+     <div className='firstPage'>
+      <h1 className='noteName'>NOTE_IT</h1>
+      <h2>You have no notes</h2>
+      <button className='btn btn-primary' onClick={()=>{createNote()}}>Create One Now</button>
+     </div>
+    }
+    
     </div>
   );
 }
