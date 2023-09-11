@@ -13,7 +13,7 @@ export default function Main({currentNote,updateNote}) {
     return (
         <div className='main-area'>
             <h2>Notes</h2>
-            <textarea name="text" cols="100" rows="10" onChange={handleChange} value={currentNote.body}></textarea>
+            <textarea className="textNote" name="text" cols="100" rows="10" onChange={handleChange} value={currentNote.body}></textarea>
                 
         </div>
     )

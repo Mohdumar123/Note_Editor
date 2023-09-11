@@ -12,7 +12,7 @@ export default function Sidebar({createNote,notes,currentNote,setCurrentNoteId,d
           >
           <h4 className='text-snippet'>{note.body.split('\n')[0]}</h4>
 
-          <button type="button" className="btn btn-outline-danger btn-sm trash-btn" 
+          <button type="button" className="btn btn-outline-info btn-sm trash-btn" 
           onClick={()=>{deleteNote(note.id)}}>x</button>
           </div>
        </div>
@@ -21,7 +21,7 @@ export default function Sidebar({createNote,notes,currentNote,setCurrentNoteId,d
   return (
     <div className='sidebar'>
         <div className="sidebar-head">
-      <h2 className='sidebar-content'>Notes</h2>
+      <h2 className='sidebar-content side-heading'>Notes</h2>
       <button className="btn btn-warning btn-sm sidebar-content" onClick={createNote}><h5>+</h5></button>
     </div>
         {sidebarElement}
