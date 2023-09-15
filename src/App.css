@@ -30,7 +30,7 @@ margin: 5px 10px;
 }
 
 .title{
-  border-radius: 25px ;
+  border-radius: 5px ;
   overflow: hidden;
   width: 80%;
   cursor: pointer;
@@ -47,13 +47,16 @@ margin: 5px 10px;
 }
 
 .selected-ele{
-  background-color: rgb(2, 49, 58);
-  color: rgb(255, 255, 255);
+  background-color: rgb(0, 211, 148);
+  padding: 1%;
+  color: rgb(0, 2, 1);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
 } 
 
 .trash-btn{
   display: none;
+  height: 100%;
+  width: 25%;
 }
 
 .title:hover > .trash-btn{
@@ -91,6 +94,8 @@ margin: 5px 10px;
   .trash-btn{
     display: block;
     font-size: small;
+    height: 100%;
+    width: 35%;
   }
   .title{
     width: 100%;

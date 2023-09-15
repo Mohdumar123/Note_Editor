@@ -12,8 +12,8 @@ export default function Sidebar({createNote,notes,currentNote,setCurrentNoteId,d
           >
           <h4 className='text-snippet'>{note.body.split('\n')[0]}</h4>
 
-          <button type="button" className="btn btn-outline-danger btn-sm trash-btn" 
-          onClick={()=>{deleteNote(note.id)}}>x</button>
+          <img src="trash.png" alt="" type="button" className="btn btn-outline-danger btn-sm trash-btn" 
+          onClick={()=>{deleteNote(note.id)}}></img>
           </div>
        </div>
     )
